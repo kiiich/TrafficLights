@@ -11,6 +11,7 @@
 		0197FA4927285517001B9F09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0197FA4827285517001B9F09 /* ContentView.swift */; };
 		0197FA4B27285519001B9F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0197FA4A27285519001B9F09 /* Assets.xcassets */; };
 		0197FA4E27285519001B9F09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0197FA4D27285519001B9F09 /* Preview Assets.xcassets */; };
+		01FD17FD2729983200EAE7CA /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD17FC2729983200EAE7CA /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		0197FA4827285517001B9F09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0197FA4A27285519001B9F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0197FA4D27285519001B9F09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		01FD17FC2729983200EAE7CA /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				0197FA4627285517001B9F09 /* SUIApp.swift */,
 				0197FA4827285517001B9F09 /* ContentView.swift */,
+				01FD17FC2729983200EAE7CA /* CircleView.swift */,
 				0197FA4A27285519001B9F09 /* Assets.xcassets */,
 				0197FA4C27285519001B9F09 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01FD17FD2729983200EAE7CA /* CircleView.swift in Sources */,
 				0197FA4927285517001B9F09 /* ContentView.swift in Sources */,
 				0197FA4727285517001B9F09 /* SUIApp.swift in Sources */,
 			);
