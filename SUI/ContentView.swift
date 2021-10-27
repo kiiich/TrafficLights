@@ -18,10 +18,10 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        ZStack() {
+        ZStack {
             Color.black
                 .ignoresSafeArea()
-            VStack(){
+            VStack {
                 trafficLights
                 Spacer()
                 lightSwitcher
@@ -61,8 +61,8 @@ struct ContentView: View {
     }
     
     private func changeLight() {
-        for index in (0...lights.count - 1) {
-            lights[index].opacity = tapCount == index + 1 ? 1 : 0.3
+        for counter in 1...lights.count {
+            lights[counter - 1].opacity = tapCount == counter ? 1 : 0.3
         }
     }
 
