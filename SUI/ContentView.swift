@@ -11,6 +11,9 @@ struct ContentView: View {
    
     @State private var tapCount = 0
     @State private var buttonTitle = "Start"
+    @State private var redLight = CircleView(color: .red, opacity: 1)
+    @State private var yellowLight = CircleView(color: .yellow, opacity: 1)
+    @State private var greenLight = CircleView(color: .green, opacity: 1)
     
     var body: some View {
         VStack() {
@@ -22,9 +25,10 @@ struct ContentView: View {
 
     private var trafficLights: some View {
         VStack(spacing: 20.0) {
-            CircleView(color: .red, opacity: 1)
-            CircleView(color: .yellow, opacity: 1)
-            CircleView(color: .green, opacity: 1)
+            redLight
+            yellowLight
+            greenLight
+            
         }
     }
     
@@ -36,6 +40,7 @@ struct ContentView: View {
                 tapCount = 0
             }
             tapCount += 1
+            changeLight()
         }) {
             Text("\(buttonTitle)")
                 .font(.title)
@@ -45,6 +50,16 @@ struct ContentView: View {
         .foregroundColor(.white)
         .clipShape(RoundedRectangle(cornerRadius: 20))
         .offset(x: 0, y: -80)
+    }
+    
+    private func changeLight() {
+        
+        let secondaryLightOpacity = 0.3
+    
+        redLight.opacity = tapCount == 1 ? 1 : secondaryLightOpacity
+        yellowLight.opacity = tapCount == 2 ? 1 : secondaryLightOpacity
+        greenLight.opacity = tapCount == 3 ? 1 : secondaryLightOpacity
+        
     }
 
 }
