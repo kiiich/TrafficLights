@@ -17,7 +17,7 @@ struct CircleView: View {
             .foregroundColor(color)
             .frame(width: 100, height: 100, alignment: .center)
             .clipShape(Circle())
-            .overlay(Circle().stroke(Color.black, lineWidth: 4))
+            .overlay(Circle().stroke(.white, lineWidth: 4))
             .opacity(opacity)
         
     }
